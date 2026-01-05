@@ -110,6 +110,46 @@ footer {
     font-size: 36px;
   }
 }
+  /* FOTO GALERİ */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* LIGHTBOX */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+
+.lightbox.active {
+  display: flex;
+}
 </style>
 </head>
 
@@ -196,7 +236,21 @@ footer {
     <li>Ölçme ve değerlendirme sistemi</li>
   </ul>
 </section>
+<!-- FOTOĞRAFLAR -->
+<section id="fotograflar">
+  <h2>Dershanemizi Merak Ediyor Musunuz?</h2>
+  <p>Eğitim ortamımızdan kareler</p>
 
+  <div class="gallery">
+    <img src="foto1.webp" onclick="openLightbox(this)">
+    <img src="Screenshot_2026-01-05-22-33-53-05_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" onclick="openLightbox(this)">
+    <img src="Screenshot_2026-01-05-22-33-29-75_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" onclick="openLightbox(this)">
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
 <!-- İLETİŞİM -->
 <section id="iletisim" class="contact">
   <h2>İletişim</h2>
@@ -227,5 +281,19 @@ footer {
   © YULA Dershane
 </footer>
 
+
+<script>
+function openLightbox(img) {
+  document.getElementById("lightbox").classList.add("active");
+  document.getElementById("lightbox-img").src = img.src;
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").classList.remove("active");
+}
+</script>
+
+</body>
+</html>
 </body>
 </html>
