@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YULA Dershane</title>
+
+<style>
+:root {
+  --bg: #f5f2ea;
+  --dark: #111111;
+  --accent: #f2b705;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* GENEL SECTION */
+section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 50px 30px;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 30px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 32px;
+  border: 2px solid var(--accent);
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: var(--accent);
+}
+
+/* LISTELER */
+ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* İLETİŞİM */
+.contact {
+  text-align: center;
+}
+
+.contact a {
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>YULA Dershane</h1>
+  <p>Ortaokul öğrencileri için planlı, disiplinli ve nitelikli eğitim.</p>
+  <a href="#iletisim" class="btn">Bizimle İletişime Geçin</a>
+</section>
+
+<!-- HAKKIMIZDA -->
+<section>
+  <h2>Hakkımızda</h2>
+  <p>
+    YULA Dershane, ortaokul öğrencilerinin akademik gelişimini merkeze alan,
+    planlı ve sürdürülebilir bir eğitim anlayışıyla faaliyet göstermektedir.
+  </p>
+  <p>
+    Alanında uzman eğitmen kadrosu, özenle seçilmiş kaynaklar ve öğrenci
+    motivasyonunu önemseyen yaklaşımıyla öğrencilerin sağlam bir temel
+    oluşturmasını hedefler.
+  </p>
+</section>
+
+<!-- EĞİTİM ALANLARI -->
+<section>
+  <h2>Eğitim Alanlarımız</h2>
+  <ul>
+    <li>5. Sınıf Akademik Destek</li>
+    <li>6. Sınıf Akademik Destek</li>
+    <li>7. Sınıf Akademik Destek</li>
+    <li>8. Sınıf Akademik Destek</li>
+  </ul>
+</section>
+
+<!-- EĞİTİM MODELİ -->
+<section>
+  <h2>Eğitim Modelimiz</h2>
+  <ul>
+    <li>Düzenli konu takibi</li>
+    <li>Ödev ve kazanım kontrolü</li>
+    <li>Bireysel öğrenci takibi</li>
+    <li>Rehberlik ve motivasyon desteği</li>
+    <li>Ölçme ve değerlendirme sistemi</li>
+  </ul>
+</section>
+
+<!-- İLETİŞİM -->
+<section id="iletisim" class="contact">
+  <h2>İletişim</h2>
+
+  <p><strong>ÖZEL YULA SOSYAL ETKİNLİK VE GELİŞİM MERKEZİ</strong></p>
+
+  <p>
+    Yamaçtepe, 93001. Sokak<br>
+    Nida Sitesi No:38/A<br>
+    46000 Onikişubat / Kahramanmaraş
+  </p>
+
+  <p>
+    📞 <a href="tel:05545296644">0554 529 66 44</a>
+  </p>
+
+  <div class="contact-buttons">
+    <a class="btn" href="https://maps.app.goo.gl/Y6twopxbHMd2WHZWA" target="_blank">
+      Google Maps
+    </a>
+    <a class="btn" href="https://www.instagram.com/yulaegitimkurumu?igsh=MXB1bmkzYXlpOG1hdQ==" target="_blank">
+      Instagram
+    </a>
+  </div>
+</section>
+
+<footer>
+  © YULA Dershane
+</footer>
+
+</body>
+</html>
